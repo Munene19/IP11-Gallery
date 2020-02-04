@@ -1,0 +1,80 @@
+{% load bootstrap3 %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|&display=swap" rel="stylesheet">
+
+  {% block styles %}
+  {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% endblock %}
+
+  
+</head>
+<body>
+<nav class="justify-content-between">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{% url 'Welcome' %}" id="brand">Photo Gallery</a>
+    </div>
+    <div>
+            <ul class="nav navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'Welcome' %}">Home<span class="sr-only"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'category' %}">categories</a>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link" href="{% url 'images' %}">pictures</a>
+                  </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            <form class="form-inline my-1">
+                    <div class="md-form form-sm my-0">
+                      <input class="form-control form-control-sm mr-sm-2 mb-0" type="text" placeholder="Search photos"
+                        aria-label="Search">
+                    </div>
+                    <button class="btn btn-outline-white btn-sm my-0" type="submit">Search</button>
+                  </form>
+                  </ul>
+          </div>
+
+  </div>
+</nav>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>My photo categories</h1>
+    <div class="jumbotron">          
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <h3>Travel</h3>
+                <img src="/static/travel.jpg" alt="leisure" id="travel">
+               
+              </div>
+              <div class="col-sm-4">
+                <h3>Fun</h3>
+                <img src="/static/fun.jpg" alt="fun" id="art">
+                
+              </div>
+              <div class="col-sm-4">
+                <h3>Sky</h3>
+                <img src="/static/stars.jpg" alt="sky" id="sky">
+                
+              </div>
+              <br>
+              <br>
+              <p class="text-center"><a href="{% url 'images' %}">Explore</a></p>
+            </div>
+          </div>
+          
+</body>
+</html>
