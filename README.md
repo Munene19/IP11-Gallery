@@ -1,9 +1,9 @@
 
 #### PROJECT NAME
 Photo Gallery
-AUTHOR NAME
+#### AUTHOR NAME
 Mike munene
-PROJECT DESCRIPTION
+#### PROJECT DESCRIPTION
 This project is a personal gallery website.
 
 
