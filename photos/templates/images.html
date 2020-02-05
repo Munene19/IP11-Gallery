@@ -47,16 +47,12 @@
               
                 </div>
               </nav>
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-              </head>
-              <body>
-                  <h1 id="mpc">My photos</h1>
+              <h1 id="mpc">My photos</h1>
                   <div class="jumbotron">
                       <div class="container" id="pics">  
-
+                        
                         <div class="display">  
-                        {% for photo in photos %}
+                          {% for photo in photos %}
                          <div class="row">
                         
                           <div class="card">
@@ -74,8 +70,7 @@
                         </div>
                       </div>      
                                       <!-- Modal -->
-                                       {% for photo in photos %}
-                      
+                                       {% for photo in photos %}                      
                                              <div class="modal fade" id="myModal-{{photo.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                                 <div class="modal-dialog" role="document">
                                                   <div class="modal-content">
@@ -94,30 +89,19 @@
                                                       <a href="/"></a>
                                                     </div>
                                                     <p> <input class="form-control form-control-sm" type="text"
-              value="https://.herokuapp.com/photo/{{photo.id}}" id="{{photo.id}}" readonly="readonly">Copy link</p>
+                                                      value="https://.herokuapp.com/photo/{{photo.id}}" id="{{photo.id}}" readonly="readonly">Copy link</p>
                                                   </div>
                                                 </div>
                                               </div>
-                                            </div>
+                                      
                                             
                                                    {% endfor %}
-                                           </div>
+                                         
                                             
-                                          </div>
+                                  
                                           
-                                        </div>
-                                       
-
-
-            <!-- The text field -->
-           
-           
-            
-            <!-- The button used to copy the text -->
-          
-                                      </div>
-                                      </div>
-                                      </div>
-                                      
+                  
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
  </body>
  </html>
