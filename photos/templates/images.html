@@ -6,7 +6,7 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <link href="https://fonts.googleapis.com/css?family=Pacifico|&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Pacifico|Montserrat:300,400&display=swap" rel="stylesheet">
 
      {% block styles %}
      {% bootstrap_css %}
@@ -16,7 +16,7 @@
      <title>Images</title>
  </head>
  <body>
-        <nav class="justify-content-between">
+        <nav class="justify-content-space-between">
                 <div class="container-fluid">
                   <div class="navbar-header">
                     <a class="navbar-brand" href="{% url 'Welcome' %}" id="brand">Photo Gallery</a>
@@ -51,7 +51,7 @@
               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
               </head>
               <body>
-                  <h1>My photos</h1>
+                  <h1 id="mpc">My photos</h1>
                   <div class="jumbotron">
                       <div class="container" id="pics">  
 
@@ -91,6 +91,7 @@
                                                       {% endautoescape %}
                                                       <h5 class="mid">Category - {{photo.category}}</h5>
                                                       <h5 class="mid">Location - {{photo.location}}</h5>
+                                                      <a href="/"></a>
                                                     </div>
                                                     <p> <input class="form-control form-control-sm" type="text"
               value="https://.herokuapp.com/photo/{{photo.id}}" id="{{photo.id}}" readonly="readonly">Copy link</p>
