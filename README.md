@@ -6,17 +6,13 @@ Mike munene
 #### PROJECT DESCRIPTION
 This project is a personal gallery website.
 
-
-
-Consists of a display of all photos
-Search results page
-
-Users can view details of a single photo
+-Consists of a display of all photos
+-Users can view details of a single photo
 Such details include:
-Photo title
-Photo description
-Location
-Category
+-Photo title
+-Photo description
+-Location
+-Category
 
 #### PROJECT SET UP INSTRUCTIONS
 This project was generated with python version 3.7.3 and django version 1.11.17
